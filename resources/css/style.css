@@ -1,0 +1,129 @@
+/*
+p,ul,ol,dl,menu,pre{
+  margin: 0;
+  padding: 0;
+}
+*/
+body{
+/*  display: flex;
+  justify-content: center; */
+}
+main{
+  background: pink;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.content{
+  width: 960px;
+  height: 300px;
+  background: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.test{
+  width: 50px;
+  height: 25px;
+  background: red;
+  position: absolute;
+  top: 12rem;
+  right: 3rem;
+}
+.holder{
+  background: silver;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.box{
+  width: 150px;
+  height: 100px;
+  background: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*___________ Header Style ___________*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  width: 960px; /*with position absolute, width needs to be set*/
+  height: 30px;
+  background-color: blue;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 80px;
+}
+/*  background-color: yellow;  */
+}
+nav{
+  display:flex;
+  margin-right: 1rem;
+/* background-color: beige;  */
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+/* background-color: silver;*/
+}
+nav li{
+  margin: 0 .8rem;
+/*  background-color: aqua;  */
+}
+a{
+  color: green;
+}
+
+/*
+.equal-height-container{
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.first{
+  background-color: #FFF;
+  padding: 20px;
+  flex: 1;
+}
+
+.second{
+  background-color: yellow;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-a{
+  background-color: #c0dbe2;
+  flex: 1;
+}
+
+.second-b{
+  background-color: #cdf1c3;
+  flex: 1;
+}
+
+/*debug GHOST code
+
+ *{
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
