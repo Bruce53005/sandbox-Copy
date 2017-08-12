@@ -10,6 +10,7 @@ html{
 body{
   display: flex;
   justify-content: center;
+  background: palevioletred
 }
 main{
   background: pink;
@@ -24,12 +25,21 @@ main{
 .content{
   width: 70%;
   height: 30rem;
-  
   background: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+header{
+  width: 60%;
+  
+  color: seagreen;
+  z-index: 2;
+}
+header span{
+  font-size: 2rem;
+  background: orangered;
 }
 .test{
   width: 50px;
@@ -65,9 +75,9 @@ header{
   justify-content: center;
   align-content: center;
   font-size: 1rem;
-  position: absolute;
+  position: fixed;
   width: 750px; /*with position absolute, width needs to be set*/
-  height: 10rem;
+  height: 4rem;
   background-color: peachpuff;
 }
 .logo{
