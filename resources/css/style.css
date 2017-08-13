@@ -3,6 +3,12 @@ p,ul,ol,dl,menu,pre,div,body,section,header{
   margin: 0;
   padding: 0;
 }
+/*____box-sizing reset; keep padding & border within size____*/
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 html{
   font-size: 16px;
@@ -48,6 +54,7 @@ header span{
   position: absolute;
   top: 12rem;
   right: 3rem;
+  z-index: 3;
 }
 .holder{
   background: silver;
@@ -58,9 +65,11 @@ header span{
   align-items: center;
   z-index: 1;
 }
-.box{
-  width: 150px;
+.box p{
+  width: 28%;
   height: 6.25rem;
+  padding: 2rem;
+  border: 1rem dashed blue;
   background: lightgreen;
   display: flex;
   justify-content: center;
